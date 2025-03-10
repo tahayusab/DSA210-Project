@@ -41,17 +41,17 @@ The rise of AI has sparked debates about its impact on various industries, inclu
 
 ## Tools and Technologies  
 
-- **Programming Languages:** Python, R  
+- **Programming Languages:** Python 
 - **Libraries:** Pandas, NumPy, Matplotlib, Seaborn  
 - **Visualization Tools:** Tableau, Power BI  
-- **Data Sources:** APIs, CSV/Excel datasets, web scraping  
+- **Data Sources:** Online datasets
 
 ---
 
 ## Analysis Plan  
 
 1. **Data Collection**  
-   - Gather data from various sources on AI trends, job postings, and CS enrollment statistics.  
+   - Gather data from various sources on online dataset sources.  
 
 2. **Visualization**  
    - Use graphs, charts, and heatmaps to visualize trends in AI growth and CS-related employment.  
