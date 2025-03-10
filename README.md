@@ -75,5 +75,3 @@ The rise of AI has sparked debates about its impact on various industries, inclu
 *(Summarize findings and their implications on CS education and job prospects.)*  
 
 ---
-
-Let me know if you want any modifications or improvements! 🚀  
