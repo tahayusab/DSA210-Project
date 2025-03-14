@@ -50,7 +50,7 @@ By investigating the relationship between racism and happiness, we aim to contri
 1. **World Happiness Index** – [World Happiness Report](https://worldhappiness.report/)  
 2. **Racism-related Data:**  
    - **FBI Hate Crime Statistics** ([link](https://www.fbi.gov/services/cjis/ucr))  
-   - **Eurobarometer surveys on discrimination**  
+   - **Europa data** - [Racisim in europe](https://data.europa.eu/data/datasets/s193_53_0_ebs138?locale=en)  [discrimination in europe](https://europa.eu/eurobarometer/surveys/detail/2972)
    - **Pew Research Center** reports on racism and social attitudes  
    - **OECD Indicators on Social Inclusion & Discrimination**  
    - **Global Racism Index (if available from other research sources)**  
