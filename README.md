@@ -78,6 +78,4 @@ Happiness and well-being are essential indicators of a society's success. While 
 
 Based on the findings, we will assess whether racism has a **statistically significant impact** on national happiness levels. If the hypothesis is supported, the research could suggest that **reducing racial discrimination may contribute to higher well-being** in societies. The results could also highlight regions where improvements in inclusivity policies may lead to **a more satisfied and happier population**.  
 
----
 
-Let me know if you’d like any modifications! 🚀  
