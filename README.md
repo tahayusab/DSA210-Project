@@ -61,10 +61,10 @@ We will **merge and clean** these datasets to ensure consistency before conducti
 
 ## Tools and Technologies  
 
-- **Programming Languages:** Python, R  
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn  
-- **Visualization Tools:** Tableau, Power BI  
-- **Data Processing:** APIs, CSV/Excel datasets, web scraping  
+- **Programming Languages:** Python  
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn,  
+- **Visualization Tools:**   
+- **Data Processing:** PDF datasheets, CSV/Excel datasets  
 
 ---
 
