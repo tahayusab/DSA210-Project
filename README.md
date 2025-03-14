@@ -48,11 +48,9 @@ By investigating the relationship between racism and happiness, we aim to contri
 
 ### **Primary Data Sources:**  
 1. **World Happiness Index** – [World Happiness Report](https://worldhappiness.report/)  
-2. **Racism-related Data:**  
-   - **FBI Hate Crime Statistics** ([link](https://www.fbi.gov/services/cjis/ucr))  
+2. **Racism-related Data:**   
    - **Europa data** - [Racisim in europe](https://data.europa.eu/data/datasets/s193_53_0_ebs138?locale=en)  [discrimination in europe](https://europa.eu/eurobarometer/surveys/detail/2972)
-   - **Pew Research Center** reports on racism and social attitudes  
-   - **OECD Indicators on Social Inclusion & Discrimination**  
+   - **World Values Index** ([link]([https://www.fbi.gov/services/cjis/ucr](https://www.worldvaluessurvey.org/WVSOnline.jsp)))    
    - **Global Racism Index (if available from other research sources)**  
 
 We will **merge and clean** these datasets to ensure consistency before conducting any analysis.  
