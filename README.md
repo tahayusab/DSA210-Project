@@ -23,6 +23,7 @@ These findings could offer valuable insights for **policymakers, educators, and 
 - **Alternative Hypothesis (Hₐ):** Higher racism levels are associated with higher happiness scores, indicating a positive correlation between racism and happiness.  
 
 Through statistical testing, we aim to determine whether we can reject the null hypothesis in favor of the alternative hypothesis or if there is insufficient evidence to establish a relationship.  
+
 ---
 
 ## Objectives  
