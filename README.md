@@ -19,14 +19,10 @@ These findings could offer valuable insights for **policymakers, educators, and 
 
 ## Hypothesis  
 
-We hypothesize that:  
+- **Null Hypothesis (H₀):** There is no significant relationship between racism levels and the World Happiness Index. Racism and happiness scores are independent of each other.  
+- **Alternative Hypothesis (Hₐ):** Higher racism levels are associated with higher happiness scores, indicating a positive correlation between racism and happiness.  
 
-- **Countries with lower racism and discrimination levels will have higher happiness scores.**  
-- **Regions with strong social inclusion policies will exhibit better well-being indicators.**  
-- **Economic factors such as GDP per capita will partially mediate the impact of racism on happiness.**  
-
-If these hypotheses hold true, our findings could support initiatives aimed at **reducing discrimination to improve societal well-being**.  
-
+Through statistical testing, we aim to determine whether we can reject the null hypothesis in favor of the alternative hypothesis or if there is insufficient evidence to establish a relationship.  
 ---
 
 ## Objectives  
