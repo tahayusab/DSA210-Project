@@ -84,6 +84,7 @@ Statistical tests will determine whether we can reject the null hypothesis and e
 
 ![download](https://github.com/user-attachments/assets/fbca9169-2b4e-43d6-b856-f3f3a37bae95)
 
+![download](https://github.com/user-attachments/assets/c0d0a0f2-fbec-4c79-861f-9c81ae63b723)
 
 
 Observations:  
@@ -107,6 +108,8 @@ Homosexuals:
   Traditional p-value = 0.0000
   Permutation test p-value = 1.0000
   ❌ H₀ rejected, but correlation is negative (contradicts Hₐ).
+
+  
 ![download](https://github.com/user-attachments/assets/9a66fcf5-a617-4736-adbe-eb983cfdad88)
 
 
@@ -115,6 +118,8 @@ Immigrants:
   Traditional p-value = 0.0071
   Permutation test p-value = 0.9956
   ❌ H₀ rejected, but correlation is negative (contradicts Hₐ).
+
+  
 ![download](https://github.com/user-attachments/assets/254cba7e-38a3-402c-bb3e-45accf723a37)
 
 
@@ -123,7 +128,9 @@ Race:
   Traditional p-value = 0.0002
   Permutation test p-value = 1.0000
   ❌ H₀ rejected, but correlation is negative (contradicts Hₐ).
-  ![download](https://github.com/user-attachments/assets/e23ff8fd-ea81-4b5c-a23f-e761253051c9)
+
+  
+![download](https://github.com/user-attachments/assets/e23ff8fd-ea81-4b5c-a23f-e761253051c9)
 
 
 Religion:
@@ -131,6 +138,8 @@ Religion:
   Traditional p-value = 0.0003
   Permutation test p-value = 1.0000
   ❌ H₀ rejected, but correlation is negative (contradicts Hₐ).
+
+  
    ![download](https://github.com/user-attachments/assets/8a81433a-16c8-496f-8e5e-121bbba3baa7)
 
 
@@ -139,6 +148,8 @@ Language:
   Traditional p-value = 0.0009
   Permutation test p-value = 0.9997
   ❌ H₀ rejected, but correlation is negative (contradicts Hₐ).
+
+  
    ![download](https://github.com/user-attachments/assets/6e6b4127-f594-428a-a6e5-05e58c11d4ed)
 
 
@@ -147,11 +158,10 @@ Language:
 
 ## 📊 Visualizations  
 
-### 🖼️ Sample Graphs:  
-✔️ **Scatter plots** illustrating the negative relationship between discrimination and happiness.  
-✔️ **Heatmaps** highlighting strong correlations among discrimination variables.  
 
-📌 **[View Graphs in Repository](your-github-link-here)**  
+![download](https://github.com/user-attachments/assets/1d783f60-bf81-4d6f-a9bc-88e34bcc3cc5)
+
+ 
 
 ---
 
@@ -172,10 +182,6 @@ Reducing social exclusion could lead to **increased well-being**, reinforcing th
 🔹 **Expand analysis** to regional studies.  
 🔹 **Develop a predictive machine learning model**.  
 
-📌 **[GitHub Repo Link Here]**  
-🚀 **Contributions & Feedback Welcome!**  
+
 
 ---
-
-This version makes your README **more structured, readable, and insightful**.  
-Feel free to modify any sections and insert your actual graphs! Let me know if you need further refinements. 🚀🔥  
