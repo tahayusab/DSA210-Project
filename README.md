@@ -124,6 +124,7 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Permutation p-value: **1.0000**  
 - ✅ Significant, ❌ Correlation is negative.
 -
+   
     ![download](https://github.com/user-attachments/assets/3ec2076d-78c6-4aec-b462-33b213f8130e)
 
 
@@ -133,6 +134,7 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Permutation p-value: **0.9956**  
 - ✅ Significant, ❌ Correlation is negative.
 -
+  
    ![download](https://github.com/user-attachments/assets/15c14bbe-2112-45cc-813a-12e799015a49)
 
 
@@ -142,6 +144,7 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Permutation p-value: **1.0000**  
 - ✅ Significant, ❌ Correlation is negative.
 -
+  
    ![download](https://github.com/user-attachments/assets/fb49efd4-7d86-4091-b7fe-494b777fccb9)
 
 
@@ -151,6 +154,7 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Permutation p-value: **1.0000**  
 - ✅ Significant, ❌ Correlation is negative.
 -
+
    ![download](https://github.com/user-attachments/assets/893844a1-8079-43e8-a015-8288559a33e5)
 
 
@@ -160,6 +164,7 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Permutation p-value: **0.9997**  
 - ✅ Significant, ❌ Correlation is negative.
 - 
+
    ![download](https://github.com/user-attachments/assets/ea4a95d2-ef9c-43ec-a96f-1ff9244973a5)
 ---
 
