@@ -87,7 +87,15 @@ Statistical tests will determine whether we can reject the null hypothesis and e
 | Religion      | -0.462    | 0.427       | 0.624      | 0.797 | **1.00** | 0.732    |
 | Language      | -0.429    | 0.402       | 0.730      | 0.888 | 0.732    | **1.00** |
 
+![download](https://github.com/user-attachments/assets/d68ba48d-58e7-4777-b031-fcbe630672d1)
+
+
+
 📌 **Spearman Correlation Matrix** also shows similar patterns.
+
+![download](https://github.com/user-attachments/assets/c08a5401-b768-494c-a628-65c5c7bba926)
+
+
 
 🧠 **Observation:**  
 - Negative correlations between **discrimination and happiness** across all categories.  
@@ -116,11 +124,17 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Permutation p-value: **1.0000**  
 - ✅ Significant, ❌ Correlation is negative.
 
+- ![download](https://github.com/user-attachments/assets/3ec2076d-78c6-4aec-b462-33b213f8130e)
+
+
 #### Immigrants  
 - Observed correlation: **-0.352**  
 - Traditional p-value: **0.0071**  
 - Permutation p-value: **0.9956**  
 - ✅ Significant, ❌ Correlation is negative.
+
+- ![download](https://github.com/user-attachments/assets/15c14bbe-2112-45cc-813a-12e799015a49)
+
 
 #### Race  
 - Observed correlation: **-0.472**  
@@ -128,11 +142,17 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Permutation p-value: **1.0000**  
 - ✅ Significant, ❌ Correlation is negative.
 
+- ![download](https://github.com/user-attachments/assets/fb49efd4-7d86-4091-b7fe-494b777fccb9)
+
+
 #### Religion  
 - Observed correlation: **-0.462**  
 - Traditional p-value: **0.0003**  
 - Permutation p-value: **1.0000**  
 - ✅ Significant, ❌ Correlation is negative.
+
+- ![download](https://github.com/user-attachments/assets/893844a1-8079-43e8-a015-8288559a33e5)
+
 
 #### Language  
 - Observed correlation: **-0.429**  
@@ -140,17 +160,15 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Permutation p-value: **0.9997**  
 - ✅ Significant, ❌ Correlation is negative.
 
+- 
+![download](https://github.com/user-attachments/assets/ea4a95d2-ef9c-43ec-a96f-1ff9244973a5)
 ---
 
 ## 📊 Visualizations  
 ![download](https://github.com/user-attachments/assets/50ae71e6-35a8-4584-95b9-9c9659af7abe)
-![download](https://github.com/user-attachments/assets/d68ba48d-58e7-4777-b031-fcbe630672d1)
-![download](https://github.com/user-attachments/assets/c08a5401-b768-494c-a628-65c5c7bba926)
-![download](https://github.com/user-attachments/assets/3ec2076d-78c6-4aec-b462-33b213f8130e)
-![download](https://github.com/user-attachments/assets/15c14bbe-2112-45cc-813a-12e799015a49)
-![download](https://github.com/user-attachments/assets/fb49efd4-7d86-4091-b7fe-494b777fccb9)
-![download](https://github.com/user-attachments/assets/893844a1-8079-43e8-a015-8288559a33e5)
-![download](https://github.com/user-attachments/assets/ea4a95d2-ef9c-43ec-a96f-1ff9244973a5)
+
+
+
 
 _(Insert visualizations here. Make sure they're in the `images/` folder or linked from GitHub if using raw URLs.)_
 
