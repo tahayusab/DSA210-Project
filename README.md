@@ -23,7 +23,7 @@ These insights can inform **policymakers, educators, and social organizations** 
 
 - **Null Hypothesis (H₀):** There is no significant relationship between discrimination levels and the **World Happiness Index**.  
 - **Alternative Hypothesis (Hₐ):** Higher discrimination correlates with **lower** happiness levels, indicating a negative relationship.  
-
+change **Alternative Hypothesis (Hₐ)** because the relation was there but it was negative unlike previous **Alternative Hypothesis (Hₐ):** which was positive relation
 Statistical tests will determine whether we can reject the null hypothesis and establish a measurable impact of racism on national well-being.  
 
 ---
@@ -123,8 +123,8 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Traditional p-value: **0.0000**  
 - Permutation p-value: **1.0000**  
 - ✅ Significant, ❌ Correlation is negative.
-
-- ![download](https://github.com/user-attachments/assets/3ec2076d-78c6-4aec-b462-33b213f8130e)
+-
+    ![download](https://github.com/user-attachments/assets/3ec2076d-78c6-4aec-b462-33b213f8130e)
 
 
 #### Immigrants  
@@ -132,8 +132,8 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Traditional p-value: **0.0071**  
 - Permutation p-value: **0.9956**  
 - ✅ Significant, ❌ Correlation is negative.
-
-- ![download](https://github.com/user-attachments/assets/15c14bbe-2112-45cc-813a-12e799015a49)
+-
+   ![download](https://github.com/user-attachments/assets/15c14bbe-2112-45cc-813a-12e799015a49)
 
 
 #### Race  
@@ -141,8 +141,8 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Traditional p-value: **0.0002**  
 - Permutation p-value: **1.0000**  
 - ✅ Significant, ❌ Correlation is negative.
-
-- ![download](https://github.com/user-attachments/assets/fb49efd4-7d86-4091-b7fe-494b777fccb9)
+-
+   ![download](https://github.com/user-attachments/assets/fb49efd4-7d86-4091-b7fe-494b777fccb9)
 
 
 #### Religion  
@@ -150,8 +150,8 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Traditional p-value: **0.0003**  
 - Permutation p-value: **1.0000**  
 - ✅ Significant, ❌ Correlation is negative.
-
-- ![download](https://github.com/user-attachments/assets/893844a1-8079-43e8-a015-8288559a33e5)
+-
+   ![download](https://github.com/user-attachments/assets/893844a1-8079-43e8-a015-8288559a33e5)
 
 
 #### Language  
@@ -159,18 +159,14 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 - Traditional p-value: **0.0009**  
 - Permutation p-value: **0.9997**  
 - ✅ Significant, ❌ Correlation is negative.
-
 - 
-![download](https://github.com/user-attachments/assets/ea4a95d2-ef9c-43ec-a96f-1ff9244973a5)
+   ![download](https://github.com/user-attachments/assets/ea4a95d2-ef9c-43ec-a96f-1ff9244973a5)
 ---
 
 ## 📊 Visualizations  
 ![download](https://github.com/user-attachments/assets/50ae71e6-35a8-4584-95b9-9c9659af7abe)
 
 
-
-
-_(Insert visualizations here. Make sure they're in the `images/` folder or linked from GitHub if using raw URLs.)_
 
 ---
 
