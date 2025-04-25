@@ -4,13 +4,13 @@
 
 This project explores the **relationship between national happiness levels and discrimination**, focusing on racism, religious bias, and other social exclusion factors.  
 
-By analyzing global happiness rankings alongside discrimination-related statistics, we aim to uncover patterns highlighting how **inclusivity (or lack thereof) affects societal well-being**.  
+By analyzing global happiness rankings alongside discrimination-related statistics, we aim to uncover patterns highlighting how **inclusivity affects societal well-being**.  
 
 ---
 
 ### 🔍 Key Questions  
 
-- Does higher discrimination correlate with lower happiness levels?  
+- Does higher discrimination correlate with lower happiness levels?(changed because of the results)  
 - What are the strongest factors influencing this relationship?  
 - Are there **regional differences** in the impact of racism on well-being?  
 - Can we build a **predictive model** to estimate happiness using inclusivity metrics?  
@@ -18,11 +18,36 @@ By analyzing global happiness rankings alongside discrimination-related statisti
 These insights can inform **policymakers, educators, and social organizations** seeking to foster more inclusive societies.  
 
 ---
+## 📈 Analysis Plan  
 
+1. **Data Collection & Cleaning**  
+   - Load and preprocess happiness and discrimination datasets.  
+   - Handle missing values and harmonize country names for merging.  
+
+2. **Feature Engineering**  
+   - Normalize discrimination percentages.  
+   - Create regional groups or clusters if applicable.(tried and shown a relation)   
+
+3. **Exploratory Data Analysis (EDA)**  
+   - Visualize distributions and outliers.  
+   - Use heatmaps, bar charts, and scatter plots to show relationships.
+   
+
+4. **Statistical Testing**  
+   - Use Pearson & Spearman correlation to test significance.  
+   - Run permutation tests to validate results.  
+   - Make randomise testing to say if data shows refuse H0 or unable to refuse H0
+   - 
+5. **Modeling & Prediction**  (possible future research)
+   - Train regression or classification models to predict happiness from exclusion metrics.  
+   - Evaluate model accuracy and feature importance.
+
+---
 ## 📌 Hypothesis  
 
 - **Null Hypothesis (H₀):** There is no significant relationship between discrimination levels and the **World Happiness Index**.  
-- **Alternative Hypothesis (Hₐ):** Higher discrimination correlates with **lower** happiness levels, indicating a negative relationship.  
+- **Alternative Hypothesis (Hₐ):** Higher discrimination correlates with **lower** happiness levels, indicating a negative relationship.
+
 change **Alternative Hypothesis (Hₐ)** because the relation was there but it was negative unlike previous **Alternative Hypothesis (Hₐ):** which was positive relation
 Statistical tests will determine whether we can reject the null hypothesis and establish a measurable impact of racism on national well-being.  
 
@@ -171,6 +196,12 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 ## 📊 Visualizations  
 ![download](https://github.com/user-attachments/assets/50ae71e6-35a8-4584-95b9-9c9659af7abe)
 
+
+![download](https://github.com/user-attachments/assets/2fc762ac-f4d8-4899-b6d9-25d631505a3f)
+![download](https://github.com/user-attachments/assets/c621d1bd-0524-4f32-bd31-1c00cd56f123)
+![download](https://github.com/user-attachments/assets/469102e5-e869-424e-b3e4-2d49cfa6f876)
+![download](https://github.com/user-attachments/assets/56f3e0c4-0b4a-4017-b825-b364f88f1ec8)
+![download](https://github.com/user-attachments/assets/249df4e7-629e-4efa-b383-1ec8fdf165e7)
 
 
 ---
