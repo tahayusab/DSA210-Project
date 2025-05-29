@@ -192,10 +192,20 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 
    ![download](https://github.com/user-attachments/assets/ea4a95d2-ef9c-43ec-a96f-1ff9244973a5)
 ---
-####Machine Learning 
-##KNN
-Accuracy of k-NN model: 0.8333
-Classification Report:
+## 🤖 Machine Learning Models
+
+This section explores several supervised and unsupervised learning techniques used to understand the relationship between happiness and various discrimination metrics across countries.
+
+---
+
+### 📌 K-Nearest Neighbors (KNN)
+
+KNN is a simple, instance-based learning algorithm that classifies a data point based on the majority label among its k nearest neighbors in the feature space.
+
+**🔍 Model Performance**
+- **Accuracy**: `0.83`
+- **Classification Report**:
+  ```
                precision    recall  f1-score   support
 
            0       0.83      0.83      0.83         6
@@ -204,86 +214,127 @@ Classification Report:
     accuracy                           0.83        12
    macro avg       0.83      0.83      0.83        12
 weighted avg       0.83      0.83      0.83        12
-Bias-Variance Tradeoff Data:
-    k      Bias  Variance  Error Rate
-0   3  0.177778 -0.011111    0.166667
-1   5  0.177778 -0.011111    0.166667
-2   7  0.222222 -0.055556    0.166667
-3  10  0.222222 -0.055556    0.166667
-4  15  0.244444  0.005556    0.250000
+  ```
 
-Best k: 3 (Lowest MSE: 0.3452)
-![image](https://github.com/user-attachments/assets/7dd169a1-46c5-4ce2-8c6b-501194740104)
+**📉 Bias-Variance Tradeoff**
+| k  | Bias     | Variance | Error Rate |
+|----|----------|----------|-------------|
+| 3  | 0.178    | -0.011   | 0.167       |
+| 5  | 0.178    | -0.011   | 0.167       |
+| 7  | 0.222    | -0.056   | 0.167       |
+| 10 | 0.222    | -0.056   | 0.167       |
+| 15 | 0.244    | 0.006    | 0.250       |
 
+✅ **Best k:** 3 (Lowest MSE: `0.3452`)
 
+![KNN Accuracy](https://github.com/user-attachments/assets/7dd169a1-46c5-4ce2-8c6b-501194740104)
+![Bias-Variance](https://github.com/user-attachments/assets/4b4aae45-8820-4e2e-ae14-b707f7d7d1ac)
+![Error vs K](https://github.com/user-attachments/assets/6d9f4aab-96da-48b4-bffd-e9e3980c5c10)
 
-![image](https://github.com/user-attachments/assets/4b4aae45-8820-4e2e-ae14-b707f7d7d1ac)
-![image](https://github.com/user-attachments/assets/6d9f4aab-96da-48b4-bffd-e9e3980c5c10)
+---
 
-##Decision tree
-Best max_depth: 9
-![image](https://github.com/user-attachments/assets/e8edc228-c9bf-4ff4-bde4-748cd8d9a57b)
+### 🌳 Decision Tree
 
+Decision Trees split the dataset based on feature values to learn simple, interpretable rules.
 
-visualisation of the decision tree depth 9
-![download](https://github.com/user-attachments/assets/eeb5c75a-afb1-4684-824e-4660fea4eb8c)
+- **Best Depth Chosen**: `9`
 
+![Best Depth](https://github.com/user-attachments/assets/e8edc228-c9bf-4ff4-bde4-748cd8d9a57b)
 
-#random forest
-Best max_depth: 9, Best n_estimators: 100
-Best CV MSE: 0.7588
-![image](https://github.com/user-attachments/assets/8e5210b4-d845-4af4-9c68-6e4181bc2598)
-Edit:in this homosexuality is highest but because the relationship is negative this graph show opposite relation to the topic
+**📈 Visualization of Tree (Depth = 9):**
+![Tree Diagram](https://github.com/user-attachments/assets/eeb5c75a-afb1-4684-824e-4660fea4eb8c)
 
-didnt add gdp and freedon because it only made it more corelated and dense graph
-Optimal Number of PCA Components: 4
-Random Forest with PCA - CV MSE: 0.3768
+---
 
-![image](https://github.com/user-attachments/assets/8ec4a99d-10d9-45b3-bf5a-507618e59948)
+### 🌲 Random Forest
 
-![image](https://github.com/user-attachments/assets/8eb85a99-78d8-4218-be2f-3f4715a39151)
-##Clustering
-#hierarchical
-![image](https://github.com/user-attachments/assets/028f0fce-fad4-410c-aad1-5ce8a85b91ff)
-![image](https://github.com/user-attachments/assets/42ac5d91-0ed8-4d90-a236-058c96f27911)
+Random Forest builds an ensemble of decision trees using bootstrapped data and feature randomness.
 
-![image](https://github.com/user-attachments/assets/9d831dcb-f2f2-4502-973f-11e4e9450643)
+- **Best Parameters**:
+  - `max_depth`: 9
+  - `n_estimators`: 100
+- **Best Cross-Validated MSE**: `0.7588`
 
+![Random Forest Feature Importances](https://github.com/user-attachments/assets/8e5210b4-d845-4af4-9c68-6e4181bc2598)
 
-#k-means
-![image](https://github.com/user-attachments/assets/74756bf8-bf93-4d2f-b130-fb4457c8aa24)
+> 📝 Note: Although homosexuality showed the strongest relationship, the negative correlation suggests **lower tolerance is associated with lower happiness**, which visually appears as a reverse effect in the graph.
 
-Cluster_HC
+---
+
+### 🧠 PCA + Random Forest
+
+- **Optimal PCA Components**: `4`
+- **Random Forest with PCA - CV MSE**: `0.3768`
+
+![PCA Scree Plot](https://github.com/user-attachments/assets/8ec4a99d-10d9-45b3-bf5a-507618e59948)
+![PCA Biplot](https://github.com/user-attachments/assets/8eb85a99-78d8-4218-be2f-3f4715a39151)
+
+---
+
+## 📊 Clustering (Unsupervised Learning)
+
+To find structure in the data without labels, various clustering techniques were used.
+
+---
+
+### 🔗 Hierarchical Clustering
+
+Uses distance-based dendrograms to iteratively merge similar countries.
+
+![Dendrogram 1](https://github.com/user-attachments/assets/028f0fce-fad4-410c-aad1-5ce8a85b91ff)
+![Dendrogram 2](https://github.com/user-attachments/assets/42ac5d91-0ed8-4d90-a236-058c96f27911)
+![Cluster Map](https://github.com/user-attachments/assets/9d831dcb-f2f2-4502-973f-11e4e9450643)
+
+**Cluster Sizes**
+```
 3    18
 5    14
 4    14
 2     8
 1     2
 6     1
-Name: count
+```
 
-while finding k value for clustering i got 
-Optimal Number of Clusters (Elbow Method): 2
-Optimal Number of Clusters (Silhouette Score): 7
-Final Optimal k: 2
-but the graphs showed k=5 ,k=6 is also valid values and also it can be seen that data point 20 is further from all other points in Hierarchichal graph but k=6 gives its own cluster and that was not optical so i choose k=5
+---
 
-##divisive 
-![image](https://github.com/user-attachments/assets/14fa1465-55ff-4fb4-9aba-36b15216ac07)
+### 📍 K-Means Clustering
 
+K-Means partitions data into `k` groups by minimizing intra-cluster variance.
 
-### more data to enrich my idea
-gdp & Freedom indicies
+![KMeans Clusters](https://github.com/user-attachments/assets/74756bf8-bf93-4d2f-b130-fb4457c8aa24)
 
-![image](https://github.com/user-attachments/assets/696d096f-16bc-4bf0-8ac9-78c8ec135065)
+**Cluster Optimization**
+- **Elbow Method:** k = 2
+- **Silhouette Score:** k = 7
+- **Chosen k:** `5` (based on visualization & outlier detection)
 
-freedon relation
-![image](https://github.com/user-attachments/assets/f36d19bd-a9c4-48b9-bfa7-b9838b4a6d95)
+> 👀 Data point 20 appeared distant in hierarchical clustering and was best isolated using `k=5`.
 
+---
 
-gdp relation
-![image](https://github.com/user-attachments/assets/a250a722-be21-40d5-acbc-b7c6ba3f3a35)
+### 🔻 Divisive Clustering
 
+This top-down approach begins with all data in one cluster and recursively splits.
+
+![Divisive Clustering](https://github.com/user-attachments/assets/14fa1465-55ff-4fb4-9aba-36b15216ac07)
+
+---
+
+## ➕ Enriching the Dataset
+
+To strengthen the analysis, additional economic and freedom indicators were introduced.
+
+### 🧮 GDP and Freedom Indices
+
+These were tested to enhance correlations and provide broader context:
+
+- **Freedom vs Happiness**  
+  ![Freedom Graph](https://github.com/user-attachments/assets/f36d19bd-a9c4-48b9-bfa7-b9838b4a6d95)
+
+- **GDP vs Happiness**  
+  ![GDP Graph](https://github.com/user-attachments/assets/a250a722-be21-40d5-acbc-b7c6ba3f3a35)
+
+> 💡 Note: These features made the correlation plots more dense and did not improve model performance significantly, so were not included in final models.
 
 
 ## 📊 Visualizations  
