@@ -6,10 +6,14 @@ This project explores the **relationship between national happiness levels and d
 
 By analyzing global happiness rankings alongside discrimination-related statistics, we aim to uncover patterns highlighting how **inclusivity affects societal well-being**. 
 
+  * Idea of doing this project started from this meme which shows most racist against black people and most happy country is Finland.
+   
+   So upon seeing this in this project I tried to answer if this is a real relation that affects happines of a country or just a coincadence
 
+![image](https://github.com/user-attachments/assets/7b769799-ae87-47e8-8d53-3b2e936e9232)
 
-![image](https://github.com/user-attachments/assets/9db332da-17b5-4d36-9567-414ba5ad4274)
-Idea of doing this project started from this meme which shows most racist against black people and most happy country is Finland. So upon seeing this in this project i tried to answer if this is a real relation that affects happines of a country or just a coincadence 
+ 
+   
 ---
 
 ### 🔍 Key Questions  
