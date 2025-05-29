@@ -4,8 +4,12 @@
 
 This project explores the **relationship between national happiness levels and discrimination**, focusing on racism, religious bias, and other social exclusion factors.  
 
-By analyzing global happiness rankings alongside discrimination-related statistics, we aim to uncover patterns highlighting how **inclusivity affects societal well-being**.  
+By analyzing global happiness rankings alongside discrimination-related statistics, we aim to uncover patterns highlighting how **inclusivity affects societal well-being**. 
 
+
+
+![image](https://github.com/user-attachments/assets/9db332da-17b5-4d36-9567-414ba5ad4274)
+Idea of doing this project started from this meme which shows most racist against black people and most happy country is Finland. So upon seeing this in this project i tried to answer if this is a real relation that affects happines of a country or just a coincadence 
 ---
 
 ### 🔍 Key Questions  
@@ -21,26 +25,25 @@ These insights can inform **policymakers, educators, and social organizations** 
 ## 📈 Analysis Plan  
 
 1. **Data Collection & Cleaning**  
-   - Load and preprocess happiness and discrimination datasets.  
-   - Handle missing values and harmonize country names for merging.  
+   - Import and clean datasets on happiness and discrimination.  
+   - Align country naming conventions and handle missing or inconsistent data.  
 
 2. **Feature Engineering**  
-   - Normalize discrimination percentages.  
-   - Create regional groups or clusters if applicable.(tried and shown a relation)   
+   - Normalize discrimination metrics across datasets.  
+   - Group countries by region or similarity (e.g., via clustering techniques).  
 
 3. **Exploratory Data Analysis (EDA)**  
-   - Visualize distributions and outliers.  
-   - Use heatmaps, bar charts, and scatter plots to show relationships.
-   
+   - Analyze feature distributions and detect outliers.  
+   - Use visual tools like heatmaps, bar plots, and scatterplots to explore relationships.  
 
 4. **Statistical Testing**  
-   - Use Pearson & Spearman correlation to test significance.  
-   - Run permutation tests to validate results.  
-   - Make randomise testing to say if data shows refuse H0 or unable to refuse H0
-   - 
-5. **Modeling & Prediction**  (possible future research)
-   - Train regression or classification models to predict happiness from exclusion metrics.  
-   - Evaluate model accuracy and feature importance.
+   - Conduct correlation analysis using Pearson and Spearman coefficients.  
+   - Run permutation and randomized tests to assess statistical significance.  
+   - Evaluate whether we can **reject the null hypothesis** with confidence.  
+
+5. **Modeling & Prediction** *(exploratory/future research)*  
+   - Apply classification and regression models to predict happiness scores.  
+   - Evaluate model performance and analyze feature importance for policy insight.  
 
 ---
 ## 📌 Hypothesis  
@@ -55,11 +58,11 @@ Statistical tests will determine whether we can reject the null hypothesis and e
 
 ## 🎯 Objectives  
 
-- **Analyze correlations** between discrimination factors and happiness scores.  
-- **Identify trends** among countries with high/low discrimination levels.  
-- **Explore confounding factors** (GDP, education, governance).  
-- **Develop a predictive model** estimating happiness based on inclusivity indicators.  
-- **Provide insights** on how inclusivity policies affect national well-being.  
+- **Quantify** the relationship between happiness and various forms of discrimination.  
+- **Identify global trends** among countries with higher or lower exclusion.  
+- **Control for confounding factors** such as GDP, governance, and personal freedoms.  
+- **Prototype predictive models** of happiness from social metrics.  
+- **Deliver actionable insights** to improve inclusivity and national well-being.  
 
 ---
 
@@ -72,15 +75,19 @@ Statistical tests will determine whether we can reject the null hypothesis and e
    - [Europa Racism Data](https://data.europa.eu/data/datasets/s193_53_0_ebs138?locale=en)  
    - [Eurobarometer Discrimination Report](https://europa.eu/eurobarometer/surveys/detail/2972)  
    - [World Values Index](https://www.worldvaluessurvey.org/WVSOnline.jsp)  
-
+3. **GDP Data:**
+   – [GDP data](https://datahub.io/core/gdp?utm_source=chatgpt.com)  
+5. **Freedom Data:**
+    – [Freedom House](https://freedomhouse.org/report/freedom-world#Data)  
 ---
 
 ## 🛠️ Tools & Technologies  
 
-- **Programming Language:** Python  
-- **Data Libraries:** Pandas, NumPy, SciPy  
+- **Languages & Libraries:** Python, Pandas, NumPy, SciPy  
 - **Visualization:** Matplotlib, Seaborn  
-- **Analysis:** Pearson & Spearman Correlation, Regression Modeling  
+- **Statistical Analysis:** Pearson/Spearman Correlation, Hypothesis Testing  
+- **Machine Learning:** Scikit-learn (k-NN, Decision Tree, Random Forest, Clustering)  
+- **Dimensionality Reduction:** PCA   
 
 ---
 
@@ -192,11 +199,15 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 
    ![download](https://github.com/user-attachments/assets/ea4a95d2-ef9c-43ec-a96f-1ff9244973a5)
 ---
-####Machine Learning 
-##KNN
-Accuracy of k-NN model: 0.8333
-Classification Report:
-               precision    recall  f1-score   support
+### 📌 K-Nearest Neighbors (KNN)
+
+**🔍 Model Performance**
+
+- **Accuracy**: `0.83`
+- **Support Size**: 12
+
+```
+              precision    recall  f1-score   support
 
            0       0.83      0.83      0.83         6
            1       0.83      0.83      0.83         6
@@ -204,90 +215,133 @@ Classification Report:
     accuracy                           0.83        12
    macro avg       0.83      0.83      0.83        12
 weighted avg       0.83      0.83      0.83        12
-Bias-Variance Tradeoff Data:
-    k      Bias  Variance  Error Rate
-0   3  0.177778 -0.011111    0.166667
-1   5  0.177778 -0.011111    0.166667
-2   7  0.222222 -0.055556    0.166667
-3  10  0.222222 -0.055556    0.166667
-4  15  0.244444  0.005556    0.250000
+```
 
-Best k: 3 (Lowest MSE: 0.3452)
-![image](https://github.com/user-attachments/assets/7dd169a1-46c5-4ce2-8c6b-501194740104)
+---
+
+**📉 Bias-Variance Tradeoff**
+
+| k  | Bias     | Variance | Error Rate |
+|----|----------|----------|-------------|
+| 3  | 0.178    | -0.011   | 0.167       |
+| 5  | 0.178    | -0.011   | 0.167       |
+| 7  | 0.222    | -0.056   | 0.167       |
+| 10 | 0.222    | -0.056   | 0.167       |
+| 15 | 0.244    | 0.006    | 0.250       |
+✅ **Best k:** 3 (Lowest MSE: `0.3452`)
+
+![KNN Accuracy](https://github.com/user-attachments/assets/7dd169a1-46c5-4ce2-8c6b-501194740104)
+![Bias-Variance](https://github.com/user-attachments/assets/4b4aae45-8820-4e2e-ae14-b707f7d7d1ac)
+![Error vs K](https://github.com/user-attachments/assets/6d9f4aab-96da-48b4-bffd-e9e3980c5c10)
+
+---
+
+### 🌳 Decision Tree
+
+Decision Trees split the dataset based on feature values to learn simple, interpretable rules.
+
+- **Best Depth Chosen**: `9`
+
+![Best Depth](https://github.com/user-attachments/assets/e8edc228-c9bf-4ff4-bde4-748cd8d9a57b)
+
+**📈 Visualization of Tree (Depth = 9):**
+![Tree Diagram](https://github.com/user-attachments/assets/eeb5c75a-afb1-4684-824e-4660fea4eb8c)
+
+---
+
+### 🌲 Random Forest
+
+Random Forest builds an ensemble of decision trees using bootstrapped data and feature randomness.
+
+- **Best Parameters**:
+  - `max_depth`: 9
+  - `n_estimators`: 100
+- **Best Cross-Validated MSE**: `0.7588`
+
+![Random Forest Feature Importances](https://github.com/user-attachments/assets/8e5210b4-d845-4af4-9c68-6e4181bc2598)
+
+> 📝 Note: Although homosexuality showed the strongest relationship, the negative correlation suggests **lower tolerance is associated with lower happiness**, which visually appears as a reverse effect in the graph.
+
+---
+
+### 🧠 PCA + Random Forest
+
+- **Optimal PCA Components**: `4`
+- **Random Forest with PCA - CV MSE**: `0.3768`
+
+![PCA Scree Plot](https://github.com/user-attachments/assets/8ec4a99d-10d9-45b3-bf5a-507618e59948)
+![PCA Biplot](https://github.com/user-attachments/assets/8eb85a99-78d8-4218-be2f-3f4715a39151)
+
+---
+
+## 📊 Clustering (Unsupervised Learning)
+
+To find structure in the data without labels, various clustering techniques were used.
+
+---
+
+### 🔗 Hierarchical Clustering
+
+Uses distance-based dendrograms to iteratively merge similar countries.
+
+![Dendrogram 1](https://github.com/user-attachments/assets/028f0fce-fad4-410c-aad1-5ce8a85b91ff)
+![Dendrogram 2](https://github.com/user-attachments/assets/42ac5d91-0ed8-4d90-a236-058c96f27911)
 
 
-
-![image](https://github.com/user-attachments/assets/4b4aae45-8820-4e2e-ae14-b707f7d7d1ac)
-![image](https://github.com/user-attachments/assets/6d9f4aab-96da-48b4-bffd-e9e3980c5c10)
-
-##Decision tree
-Best max_depth: 9
-![image](https://github.com/user-attachments/assets/e8edc228-c9bf-4ff4-bde4-748cd8d9a57b)
-
-
-visualisation of the decision tree depth 9
-![download](https://github.com/user-attachments/assets/eeb5c75a-afb1-4684-824e-4660fea4eb8c)
-
-
-#random forest
-Best max_depth: 9, Best n_estimators: 100
-Best CV MSE: 0.7588
-![image](https://github.com/user-attachments/assets/8e5210b4-d845-4af4-9c68-6e4181bc2598)
-Edit:in this homosexuality is highest but because the relationship is negative this graph show opposite relation to the topic
-
-didnt add gdp and freedon because it only made it more corelated and dense graph
-Optimal Number of PCA Components: 4
-Random Forest with PCA - CV MSE: 0.3768
-
-![image](https://github.com/user-attachments/assets/8ec4a99d-10d9-45b3-bf5a-507618e59948)
-
-![image](https://github.com/user-attachments/assets/8eb85a99-78d8-4218-be2f-3f4715a39151)
-##Clustering
-#hierarchical
-![image](https://github.com/user-attachments/assets/028f0fce-fad4-410c-aad1-5ce8a85b91ff)
-![image](https://github.com/user-attachments/assets/42ac5d91-0ed8-4d90-a236-058c96f27911)
-
-![image](https://github.com/user-attachments/assets/9d831dcb-f2f2-4502-973f-11e4e9450643)
-
-
-#k-means
-![image](https://github.com/user-attachments/assets/74756bf8-bf93-4d2f-b130-fb4457c8aa24)
-
-Cluster_HC
+**Cluster Sizes**
+```
 3    18
 5    14
 4    14
 2     8
 1     2
 6     1
-Name: count
+```
 
-while finding k value for clustering i got 
-Optimal Number of Clusters (Elbow Method): 2
-Optimal Number of Clusters (Silhouette Score): 7
-Final Optimal k: 2
-but the graphs showed k=5 ,k=6 is also valid values and also it can be seen that data point 20 is further from all other points in Hierarchichal graph but k=6 gives its own cluster and that was not optical so i choose k=5
+---
 
-##divisive 
-![image](https://github.com/user-attachments/assets/14fa1465-55ff-4fb4-9aba-36b15216ac07)
+### 📍 K-Means Clustering
 
+K-Means partitions data into `k` groups by minimizing intra-cluster variance.
 
-### more data to enrich my idea
-gdp & Freedom indicies
+![KMeans Clusters](https://github.com/user-attachments/assets/74756bf8-bf93-4d2f-b130-fb4457c8aa24)
 
-![image](https://github.com/user-attachments/assets/696d096f-16bc-4bf0-8ac9-78c8ec135065)
+**Cluster Optimization**
+- **Elbow Method:** k = 2
+- **Silhouette Score:** k = 7
+- **Chosen k:** `5` (based on visualization & outlier detection)
 
-freedon relation
-![image](https://github.com/user-attachments/assets/f36d19bd-a9c4-48b9-bfa7-b9838b4a6d95)
+> 👀 Data point 20 appeared distant in hierarchical clustering and was best isolated using `k=5`.
 
+---
 
-gdp relation
-![image](https://github.com/user-attachments/assets/a250a722-be21-40d5-acbc-b7c6ba3f3a35)
+### 🔻 Divisive Clustering
 
+This top-down approach begins with all data in one cluster and recursively splits.
 
+![Divisive Clustering](https://github.com/user-attachments/assets/14fa1465-55ff-4fb4-9aba-36b15216ac07)
 
-## 📊 Visualizations  
-![download](https://github.com/user-attachments/assets/50ae71e6-35a8-4584-95b9-9c9659af7abe)
+---
+
+## ➕ Enriching the Dataset
+
+To strengthen the analysis, additional economic and freedom indicators were introduced.
+
+### 🧮 GDP and Freedom Indices
+
+These were tested to enhance correlations and provide broader context:
+
+- **All Data Heatmap**
+
+  ![Cluster Map](https://github.com/user-attachments/assets/9d831dcb-f2f2-4502-973f-11e4e9450643)
+  
+- **Freedom vs Happiness**  
+  ![Freedom Graph](https://github.com/user-attachments/assets/f36d19bd-a9c4-48b9-bfa7-b9838b4a6d95)
+
+- **GDP vs Happiness**  
+  ![GDP Graph](https://github.com/user-attachments/assets/a250a722-be21-40d5-acbc-b7c6ba3f3a35)
+
+> 💡 Note: These features made the correlation plots more dense and did not improve model performance significantly, so were not included in final models.
 
 
 ![download](https://github.com/user-attachments/assets/2fc762ac-f4d8-4899-b6d9-25d631505a3f)
@@ -296,34 +350,78 @@ gdp relation
 ![download](https://github.com/user-attachments/assets/56f3e0c4-0b4a-4017-b825-b364f88f1ec8)
 ![download](https://github.com/user-attachments/assets/249df4e7-629e-4efa-b383-1ec8fdf165e7)
 
-k-means methods
-![image](https://github.com/user-attachments/assets/e7313d9a-46b1-4f3d-8e6b-2c1d68a7423e)
-![image](https://github.com/user-attachments/assets/55d3b2f6-60ec-4306-824a-b85d5f2d68b6)
+- **K-Means methods**
+  
+   ![image](https://github.com/user-attachments/assets/e7313d9a-46b1-4f3d-8e6b-2c1d68a7423e)
+   ![image](https://github.com/user-attachments/assets/55d3b2f6-60ec-4306-824a-b85d5f2d68b6)
 
 
 ---
 
-## 🎯 Conclusion  
+## 🎯 Conclusion (Updated)
 
-- **Higher discrimination = Lower happiness levels**  
-- **LGBTQ+ exclusion shows the strongest negative impact**  
-- Countries with **inclusive policies** score higher on the happiness index  
-
----
-
-## 🌍 Implications  
-
-These findings support global initiatives to:  
-- Reduce exclusionary behaviors and policies  
-- Promote inclusivity and equal rights  
-- Foster well-being through social cohesion  
+- A **negative correlation** between discrimination and happiness is confirmed — **higher discrimination is associated with lower happiness levels**.
+- **GDP** (economic strength) has a strong **positive correlation** with happiness but does **not negate the effects of discrimination**.
+- **Freedom** also correlates positively with happiness, though its interaction with discrimination is **more nuanced**.
+- **LGBTQ+ exclusion** shows the **strongest negative impact** on well-being, marking it as a **key area for policy action**.
+- Countries with **inclusive policies and economic stability** consistently rank higher in the **World Happiness Index**.
 
 ---
 
-## 🔮 Next Steps  
+## 🌍 Implications 
 
-- 🔎 Explore **confounding variables** like GDP, education, governance  
-- 🌐 Conduct **regional-focused** analysis  
-- 🤖 Build a **predictive ML model** using inclusivity as a feature  
+These findings highlight the need for a **multi-dimensional approach** to improving global happiness:
+
+- Implement **policy reforms** that actively reduce discrimination and exclusion.  
+- Promote **economic development and good governance** as foundational to well-being.  
+- Support **freedom-based initiatives** that uphold individual rights alongside economic progress.  
+- Use **intersectional frameworks** to explore how discrimination, wealth, and freedom interact — rather than studying these factors in isolation.
 
 ---
+
+## 🔮 Next Steps 
+
+- 🔎 **Explore interactions** between discrimination, GDP, and personal freedom using interaction terms or stratified analysis.  
+- 🌐 **Perform region-specific analysis** to detect differing trends across continents or income groups.  
+- 📈 **Conduct causal inference** (e.g., regression with controls, instrumental variables, or longitudinal data) to test **causality, not just correlation**.  
+- 🤖 **Enhance predictive models** by integrating both **inclusivity and economic variables** into a unified framework for estimating happiness.
+## 🤖 Machine Learning Summary
+
+To better understand and **model the relationship between discrimination and happiness**, several machine learning techniques were applied:
+
+---
+
+### 🔢 Supervised Learning
+
+#### ✅ k-Nearest Neighbors (k-NN)
+- Accuracy: **0.83**
+- Classification Report showed **balanced performance across classes**.
+- A **bias-variance analysis** indicated **k=3** as the optimal value, with the lowest mean squared error.
+- Shows promise in distinguishing between countries with higher/lower happiness based on discrimination metrics.
+
+#### 🌳 Decision Trees
+- Best `max_depth`: **9**
+- Visualized for interpretability.
+- Helped highlight the **most influential discrimination features** affecting happiness.
+
+#### 🌲 Random Forests
+- Best Parameters: `max_depth=9`, `n_estimators=100`
+- Cross-validated Mean Squared Error: **0.7588**
+- Performed **feature importance analysis** to rank the factors (e.g., LGBTQ+ bias stood out).
+- PCA (Principal Component Analysis) was used to reduce noise and dimensionality.
+  - Optimal number of components: **4**
+  - Random Forest with PCA achieved improved CV MSE: **0.3768**
+
+---
+
+### 🔍 Unsupervised Learning
+
+#### 📊 Clustering (Hierarchical, K-Means, Divisive)
+- **Hierarchical Clustering** revealed regional and outlier groupings.
+- **K-Means**:
+  - Elbow method suggested `k=2`, Silhouette method suggested `k=7`.
+  - Based on visualization and separation logic, **k=5** was selected as optimal.
+- **Divisive clustering** helped detect hidden subgroup structures and isolate countries with unique discrimination profiles.
+
+These models offered **both predictive and explanatory value**, reinforcing earlier statistical insights while helping to **group similar countries**, reduce dimensionality, and **highlight key discriminatory variables** affecting happiness.
+
