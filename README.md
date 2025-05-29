@@ -192,6 +192,99 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 
    ![download](https://github.com/user-attachments/assets/ea4a95d2-ef9c-43ec-a96f-1ff9244973a5)
 ---
+####Machine Learning 
+##KNN
+Accuracy of k-NN model: 0.8333
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.83      0.83      0.83         6
+           1       0.83      0.83      0.83         6
+
+    accuracy                           0.83        12
+   macro avg       0.83      0.83      0.83        12
+weighted avg       0.83      0.83      0.83        12
+Bias-Variance Tradeoff Data:
+    k      Bias  Variance  Error Rate
+0   3  0.177778 -0.011111    0.166667
+1   5  0.177778 -0.011111    0.166667
+2   7  0.222222 -0.055556    0.166667
+3  10  0.222222 -0.055556    0.166667
+4  15  0.244444  0.005556    0.250000
+
+Best k: 3 (Lowest MSE: 0.3452)
+![image](https://github.com/user-attachments/assets/7dd169a1-46c5-4ce2-8c6b-501194740104)
+
+
+
+![image](https://github.com/user-attachments/assets/4b4aae45-8820-4e2e-ae14-b707f7d7d1ac)
+![image](https://github.com/user-attachments/assets/6d9f4aab-96da-48b4-bffd-e9e3980c5c10)
+
+##Decision tree
+Best max_depth: 9
+![image](https://github.com/user-attachments/assets/e8edc228-c9bf-4ff4-bde4-748cd8d9a57b)
+
+
+visualisation of the decision tree depth 9
+![download](https://github.com/user-attachments/assets/eeb5c75a-afb1-4684-824e-4660fea4eb8c)
+
+
+#random forest
+Best max_depth: 9, Best n_estimators: 100
+Best CV MSE: 0.7588
+![image](https://github.com/user-attachments/assets/8e5210b4-d845-4af4-9c68-6e4181bc2598)
+Edit:in this homosexuality is highest but because the relationship is negative this graph show opposite relation to the topic
+
+didnt add gdp and freedon because it only made it more corelated and dense graph
+Optimal Number of PCA Components: 4
+Random Forest with PCA - CV MSE: 0.3768
+
+![image](https://github.com/user-attachments/assets/8ec4a99d-10d9-45b3-bf5a-507618e59948)
+
+![image](https://github.com/user-attachments/assets/8eb85a99-78d8-4218-be2f-3f4715a39151)
+##Clustering
+#hierarchical
+![image](https://github.com/user-attachments/assets/028f0fce-fad4-410c-aad1-5ce8a85b91ff)
+![image](https://github.com/user-attachments/assets/42ac5d91-0ed8-4d90-a236-058c96f27911)
+
+![image](https://github.com/user-attachments/assets/9d831dcb-f2f2-4502-973f-11e4e9450643)
+
+
+#k-means
+![image](https://github.com/user-attachments/assets/74756bf8-bf93-4d2f-b130-fb4457c8aa24)
+
+Cluster_HC
+3    18
+5    14
+4    14
+2     8
+1     2
+6     1
+Name: count
+
+while finding k value for clustering i got 
+Optimal Number of Clusters (Elbow Method): 2
+Optimal Number of Clusters (Silhouette Score): 7
+Final Optimal k: 2
+but the graphs showed k=5 ,k=6 is also valid values and also it can be seen that data point 20 is further from all other points in Hierarchichal graph but k=6 gives its own cluster and that was not optical so i choose k=5
+
+##divisive 
+![image](https://github.com/user-attachments/assets/14fa1465-55ff-4fb4-9aba-36b15216ac07)
+
+
+### more data to enrich my idea
+gdp & Freedom indicies
+
+![image](https://github.com/user-attachments/assets/696d096f-16bc-4bf0-8ac9-78c8ec135065)
+
+freedon relation
+![image](https://github.com/user-attachments/assets/f36d19bd-a9c4-48b9-bfa7-b9838b4a6d95)
+
+
+gdp relation
+![image](https://github.com/user-attachments/assets/a250a722-be21-40d5-acbc-b7c6ba3f3a35)
+
+
 
 ## 📊 Visualizations  
 ![download](https://github.com/user-attachments/assets/50ae71e6-35a8-4584-95b9-9c9659af7abe)
@@ -202,6 +295,10 @@ However, **permutation test p-values ≈ 1.00**, which suggests that these relat
 ![download](https://github.com/user-attachments/assets/469102e5-e869-424e-b3e4-2d49cfa6f876)
 ![download](https://github.com/user-attachments/assets/56f3e0c4-0b4a-4017-b825-b364f88f1ec8)
 ![download](https://github.com/user-attachments/assets/249df4e7-629e-4efa-b383-1ec8fdf165e7)
+
+k-means methods
+![image](https://github.com/user-attachments/assets/e7313d9a-46b1-4f3d-8e6b-2c1d68a7423e)
+![image](https://github.com/user-attachments/assets/55d3b2f6-60ec-4306-824a-b85d5f2d68b6)
 
 
 ---
