@@ -235,8 +235,13 @@ weighted avg       0.83      0.83      0.83        12
 ✅ **Best k:** 3 (Lowest MSE: `0.3452`)
 
 ![KNN Accuracy](https://github.com/user-attachments/assets/7dd169a1-46c5-4ce2-8c6b-501194740104)
-![Bias-Variance](https://github.com/user-attachments/assets/4b4aae45-8820-4e2e-ae14-b707f7d7d1ac)
-![Error vs K](https://github.com/user-attachments/assets/6d9f4aab-96da-48b4-bffd-e9e3980c5c10)
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/4b4aae45-8820-4e2e-ae14-b707f7d7d1ac" width="600"/></td>
+    <td><img src="https://github.com/user-attachments/assets/6d9f4aab-96da-48b4-bffd-e9e3980c5c10" width="600"/></td>
+  </tr>
+</table>
+
 
 ---
 
@@ -340,7 +345,8 @@ These were tested to enhance correlations and provide broader context:
   ![Cluster Map](https://github.com/user-attachments/assets/9d831dcb-f2f2-4502-973f-11e4e9450643)
   
 - **Freedom vs Happiness**  
-  ![Freedom Graph](https://github.com/user-attachments/assets/f36d19bd-a9c4-48b9-bfa7-b9838b4a6d95)
+  ![Freedom Graph](https://github.com/user-attachments/assets/544a92ca-601f-419f-a915-8e708a68733f)
+
 
 - **GDP vs Happiness**  
   ![GDP Graph](https://github.com/user-attachments/assets/a250a722-be21-40d5-acbc-b7c6ba3f3a35)
