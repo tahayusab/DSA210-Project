@@ -259,14 +259,15 @@ This is used for binary classification, where we predict whether a country falls
 
 Decision Trees split the dataset based on feature values to learn simple, interpretable rules.
 
-- **Best Depth Chosen**: `10`
+- **Best Depth Chosen**: `3`
 
 ![image](https://github.com/user-attachments/assets/90389e4c-7089-4c87-818f-abb4a2a5185f)
 
 
-**📈 Visualization of Tree (Depth = 10):**
+**📈 Visualization of Tree (Depth = 3):**
 
-![download (2)](https://github.com/user-attachments/assets/519d0ef7-75b4-494a-b4eb-10b993f7fe5b)
+![image](https://github.com/user-attachments/assets/12352054-8604-4ac7-bf84-929ede659255)
+
 
 
 ---
@@ -431,21 +432,21 @@ To better understand and **model the relationship between discrimination and hap
 #### ✅ k-Nearest Neighbors (k-NN)
 - Accuracy: **0.83**
 - Classification Report showed **balanced performance across classes**.
-- A **bias-variance analysis** indicated **k=3** as the optimal value, with the lowest mean squared error.
+- A **bias-variance analysis** indicated **k=10** as the optimal value, with the lowest mean squared error.
 - Shows promise in distinguishing between countries with higher/lower happiness based on discrimination metrics.
 
 #### 🌳 Decision Trees
-- Best `max_depth`: **9**
+- Best `max_depth`: **3**
 - Visualized for interpretability.
 - Helped highlight the **most influential discrimination features** affecting happiness.
 
 #### 🌲 Random Forests
-- Best Parameters: `max_depth=9`, `n_estimators=100`
-- Cross-validated Mean Squared Error: **0.7588**
+- Best Parameters: `max_depth=10`, `n_estimators=50`
+- Cross-validated Mean Squared Error: **0.7634**
 - Performed **feature importance analysis** to rank the factors (e.g., LGBTQ+ bias stood out).
 - PCA (Principal Component Analysis) was used to reduce noise and dimensionality.
-  - Optimal number of components: **4**
-  - Random Forest with PCA achieved improved CV MSE: **0.3768**
+  - Optimal number of components: **5**
+  - Random Forest with PCA achieved improved CV MSE: **0.4265**
 
 ---
 
@@ -454,8 +455,8 @@ To better understand and **model the relationship between discrimination and hap
 #### 📊 Clustering (Hierarchical, K-Means, Divisive)
 - **Hierarchical Clustering** revealed regional and outlier groupings.
 - **K-Means**:
-  - Elbow method suggested `k=2`, Silhouette method suggested `k=7`.
-  - Based on visualization and separation logic, **k=5** was selected as optimal.
+  - Elbow method suggested `k=2`, Silhouette method suggested `k=2`.
+  - Based on visualization and separation logic, **k=2** was selected as optimal.
 - **Divisive clustering** helped detect hidden subgroup structures and isolate countries with unique discrimination profiles.
 
 These models offered **both predictive and explanatory value**, reinforcing earlier statistical insights while helping to **group similar countries**, reduce dimensionality, and **highlight key discriminatory variables** affecting happiness.
