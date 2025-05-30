@@ -232,20 +232,25 @@ weighted avg       0.83      0.83      0.83        12
 
 | k  | Bias     | Variance | Error Rate |
 |----|----------|----------|-------------|
-| 3  | 0.178    | -0.011   | 0.167       |
-| 5  | 0.178    | -0.011   | 0.167       |
-| 7  | 0.222    | -0.056   | 0.167       |
-| 10 | 0.222    | -0.056   | 0.167       |
-| 15 | 0.244    | 0.006    | 0.250       |
-✅ **Best k:** 3 (Lowest MSE: `0.3452`)
+| 3  | 0.111    |  0.138   | 0.250       |
+| 5  | 0.222    | -0.055   | 0.167       |
+| 7  | 0.200    | -0.033   | 0.167       |
+| 10 | 0.222    | -0.055   | 0.167       |
+| 15 | 0.222    | -0.055   | 0.250       |
+✅ **Best k:** 6 (Lowest MSE: `0.4224`)
 
-![KNN Accuracy](https://github.com/user-attachments/assets/7dd169a1-46c5-4ce2-8c6b-501194740104)
-<table>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/4b4aae45-8820-4e2e-ae14-b707f7d7d1ac" width="600"/></td>
-    <td><img src="https://github.com/user-attachments/assets/6d9f4aab-96da-48b4-bffd-e9e3980c5c10" width="600"/></td>
-  </tr>
-</table>
+![image](https://github.com/user-attachments/assets/e3ea26ae-e988-4ab1-90cc-c2687e958596)
+
+![image](https://github.com/user-attachments/assets/2e7ceb67-7517-4823-9010-4d89df10630d)
+
+![image](https://github.com/user-attachments/assets/cf9f1e83-e037-4515-a436-4a365af3df74)
+
+0 → Countries with happiness scores below the median (Lower happiness group).
+
+1 → Countries with happiness scores above the median (Higher happiness group).
+
+This is used for binary classification, where we predict whether a country falls into a high or low happiness category based on social/economic indicators. ✔️ Circles → Training data points, used to train the k-NN model. ✔️ Squares → Test data points, which the model predicts.
+
 
 
 ---
@@ -254,12 +259,15 @@ weighted avg       0.83      0.83      0.83        12
 
 Decision Trees split the dataset based on feature values to learn simple, interpretable rules.
 
-- **Best Depth Chosen**: `9`
+- **Best Depth Chosen**: `10`
 
-![Best Depth](https://github.com/user-attachments/assets/e8edc228-c9bf-4ff4-bde4-748cd8d9a57b)
+![image](https://github.com/user-attachments/assets/90389e4c-7089-4c87-818f-abb4a2a5185f)
 
-**📈 Visualization of Tree (Depth = 9):**
-![Tree Diagram](https://github.com/user-attachments/assets/eeb5c75a-afb1-4684-824e-4660fea4eb8c)
+
+**📈 Visualization of Tree (Depth = 10):**
+
+![download (2)](https://github.com/user-attachments/assets/519d0ef7-75b4-494a-b4eb-10b993f7fe5b)
+
 
 ---
 
@@ -268,11 +276,12 @@ Decision Trees split the dataset based on feature values to learn simple, interp
 Random Forest builds an ensemble of decision trees using bootstrapped data and feature randomness.
 
 - **Best Parameters**:
-  - `max_depth`: 9
-  - `n_estimators`: 100
-- **Best Cross-Validated MSE**: `0.7588`
+  - `max_depth`: 10
+  - `n_estimators`: 50
+- **Best Cross-Validated MSE**: `0.7634`
 
-![Random Forest Feature Importances](https://github.com/user-attachments/assets/8e5210b4-d845-4af4-9c68-6e4181bc2598)
+![image](https://github.com/user-attachments/assets/40e64b21-d6a3-41f4-8584-40deb8463f61)
+
 
 > 📝 Note: Although homosexuality showed the strongest relationship, the negative correlation suggests **lower tolerance is associated with lower happiness**, which visually appears as a reverse effect in the graph.
 
@@ -280,11 +289,13 @@ Random Forest builds an ensemble of decision trees using bootstrapped data and f
 
 ### 🧠 PCA + Random Forest
 
-- **Optimal PCA Components**: `4`
-- **Random Forest with PCA - CV MSE**: `0.3768`
+- **Optimal PCA Components**: `5`
+- **Random Forest with PCA - CV MSE**: `0.4265`
 
-![PCA Scree Plot](https://github.com/user-attachments/assets/8ec4a99d-10d9-45b3-bf5a-507618e59948)
-![PCA Biplot](https://github.com/user-attachments/assets/8eb85a99-78d8-4218-be2f-3f4715a39151)
+![image](https://github.com/user-attachments/assets/5361cb44-38a2-4e21-8c67-aeb0f886bda2)
+
+![image](https://github.com/user-attachments/assets/432656d7-c739-4b6e-a98c-73b779897774)
+
 
 ---
 
@@ -298,8 +309,10 @@ To find structure in the data without labels, various clustering techniques were
 
 Uses distance-based dendrograms to iteratively merge similar countries.
 
-![Dendrogram 1](https://github.com/user-attachments/assets/028f0fce-fad4-410c-aad1-5ce8a85b91ff)
-![image](https://github.com/user-attachments/assets/bc1d6b08-bfb0-4ff0-a5b1-0adb58873feb)
+![image](https://github.com/user-attachments/assets/6c0ae905-ad88-4d65-873b-4f8b9e7a2509)
+
+![image](https://github.com/user-attachments/assets/df5b7418-20d6-4843-8199-064a0bc46c01)
+
 
 
 
@@ -307,8 +320,8 @@ Uses distance-based dendrograms to iteratively merge similar countries.
 **Cluster Sizes**
 ```
 3    18
-5    14
-4    14
+5    15
+4    13
 2     8
 1     2
 6     1
@@ -320,12 +333,14 @@ Uses distance-based dendrograms to iteratively merge similar countries.
 
 K-Means partitions data into `k` groups by minimizing intra-cluster variance.
 
-![KMeans Clusters](https://github.com/user-attachments/assets/74756bf8-bf93-4d2f-b130-fb4457c8aa24)
+![image](https://github.com/user-attachments/assets/95bade65-e60f-4b04-9ae7-c9ef21c4bbee)
+
+
 
 **Cluster Optimization**
 - **Elbow Method:** k = 2
-- **Silhouette Score:** k = 7
-- **Chosen k:** `5` (based on visualization & outlier detection)
+- **Silhouette Score:** k = 2
+- **Chosen k:** `2` (based on visualization & outlier detection)
 
 > 👀 Data point 20 appeared distant in hierarchical clustering and was best isolated using `k=5`.
 
@@ -335,7 +350,8 @@ K-Means partitions data into `k` groups by minimizing intra-cluster variance.
 
 This top-down approach begins with all data in one cluster and recursively splits.
 
-![Divisive Clustering](https://github.com/user-attachments/assets/14fa1465-55ff-4fb4-9aba-36b15216ac07)
+![image](https://github.com/user-attachments/assets/f033f4dc-d43c-4f86-9ec3-697a7cb99457)
+
 
 ---
 
@@ -369,8 +385,10 @@ These were tested to enhance correlations and provide broader context:
 
 - **K-Means methods**
   
-   ![image](https://github.com/user-attachments/assets/e7313d9a-46b1-4f3d-8e6b-2c1d68a7423e)
-   ![image](https://github.com/user-attachments/assets/55d3b2f6-60ec-4306-824a-b85d5f2d68b6)
+![image](https://github.com/user-attachments/assets/b998c918-e784-450c-9ce2-1123ae095b3f)
+
+![image](https://github.com/user-attachments/assets/1214d955-d8df-46fe-9469-b558f2f888d6)
+
 
 
 ---
