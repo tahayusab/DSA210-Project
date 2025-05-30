@@ -10,7 +10,12 @@ By analyzing global happiness rankings alongside discrimination-related statisti
 
 This led me to investigate whether there is a real relationship between discrimination and national happiness, or if this was just a coincidence.
 
-![image](https://github.com/user-attachments/assets/7b769799-ae87-47e8-8d53-3b2e936e9232)
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/7b769799-ae87-47e8-8d53-3b2e936e9232" width="300"/></td>
+  </tr>
+</table>
+
 
  
    
