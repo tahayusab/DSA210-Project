@@ -299,7 +299,9 @@ To find structure in the data without labels, various clustering techniques were
 Uses distance-based dendrograms to iteratively merge similar countries.
 
 ![Dendrogram 1](https://github.com/user-attachments/assets/028f0fce-fad4-410c-aad1-5ce8a85b91ff)
-![Dendrogram 2](https://github.com/user-attachments/assets/42ac5d91-0ed8-4d90-a236-058c96f27911)
+![image](https://github.com/user-attachments/assets/bc1d6b08-bfb0-4ff0-a5b1-0adb58873feb)
+
+
 
 
 **Cluster Sizes**
