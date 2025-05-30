@@ -50,7 +50,7 @@ These insights can inform **policymakers, educators, and social organizations** 
    - Run permutation and randomized tests to assess statistical significance.  
    - Evaluate whether we can **reject the null hypothesis** with confidence.  
 
-5. **Modeling & Prediction** *(exploratory/future research)*  
+5. **Modeling & Prediction**  
    - Apply classification and regression models to predict happiness scores.  
    - Evaluate model performance and analyze feature importance for policy insight.  
 
@@ -239,6 +239,9 @@ weighted avg       0.83      0.83      0.83        12
 | 15 | 0.222    | -0.055   | 0.250       |
 ✅ **Best k:** 6 (Lowest MSE: `0.4224`)
 
+but k=10 is also good and gives a better graph
+
+
 ![image](https://github.com/user-attachments/assets/e3ea26ae-e988-4ab1-90cc-c2687e958596)
 
 ![image](https://github.com/user-attachments/assets/2e7ceb67-7517-4823-9010-4d89df10630d)
@@ -320,13 +323,18 @@ Uses distance-based dendrograms to iteratively merge similar countries.
 
 **Cluster Sizes**
 ```
-3    18
-5    15
-4    13
-2     8
-1     2
-6     1
+0 26
+1 30
+2 2
 ```
+---
+
+### 🔻 Divisive Clustering
+
+This top-down approach begins with all data in one cluster and recursively splits.
+
+![image](https://github.com/user-attachments/assets/f033f4dc-d43c-4f86-9ec3-697a7cb99457)
+
 
 ---
 
@@ -343,15 +351,6 @@ K-Means partitions data into `k` groups by minimizing intra-cluster variance.
 - **Silhouette Score:** k = 2
 - **Chosen k:** `2` (based on visualization & outlier detection)
 
-> 👀 Data point 20 appeared distant in hierarchical clustering and was best isolated using `k=5`.
-
----
-
-### 🔻 Divisive Clustering
-
-This top-down approach begins with all data in one cluster and recursively splits.
-
-![image](https://github.com/user-attachments/assets/f033f4dc-d43c-4f86-9ec3-697a7cb99457)
 
 
 ---
@@ -375,7 +374,6 @@ These were tested to enhance correlations and provide broader context:
 - **GDP vs Happiness**  
   ![GDP Graph](https://github.com/user-attachments/assets/a250a722-be21-40d5-acbc-b7c6ba3f3a35)
 
-> 💡 Note: These features made the correlation plots more dense and did not improve model performance significantly, so were not included in final models.
 
 
 ![download](https://github.com/user-attachments/assets/2fc762ac-f4d8-4899-b6d9-25d631505a3f)
@@ -415,12 +413,7 @@ These findings highlight the need for a **multi-dimensional approach** to improv
 
 ---
 
-## 🔮 Next Steps 
 
-- 🔎 **Explore interactions** between discrimination, GDP, and personal freedom using interaction terms or stratified analysis.  
-- 🌐 **Perform region-specific analysis** to detect differing trends across continents or income groups.  
-- 📈 **Conduct causal inference** (e.g., regression with controls, instrumental variables, or longitudinal data) to test **causality, not just correlation**.  
-- 🤖 **Enhance predictive models** by integrating both **inclusivity and economic variables** into a unified framework for estimating happiness.
 # 🤖 Enhanced Machine Learning Analysis
 
 ## 📊 What the Machine Learning Models Tell Us
@@ -470,7 +463,6 @@ The decision tree revealed **hierarchical decision rules**:
 - **6 distinct country groups** emerged naturally from the data
 - **Cluster sizes**: Most countries (18) fall into the moderate discrimination group
 - **Outlier detection**: Some countries show unique discrimination-happiness profiles
-- **Regional patterns**: Countries with similar cultural/geographic backgrounds cluster together
 
 **K-Means Optimization:**
 - **k=2 optimal**: Countries fundamentally divide into two groups:
